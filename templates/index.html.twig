@@ -1,0 +1,25 @@
+{# templates/index.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluation Symfony</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Trouvé votre établissement !</h1>
+<form method="get" action="answer">
+    <div>
+        <label for="name">Entre le nom de la commune: </label>
+        <input type="text" name="_name" id="name" required>
+    </div>
+    <div>
+        <label for="code">Entre le code postal: </label>
+        <input type="text" name="_code" pattern="[0-9]{5}" id="code" required>
+    </div>
+    <div>
+        <input type="submit" value="Recherche !">
+    </div>
+</form>
+</body>
+</html>

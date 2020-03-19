@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluation Symfony</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+{% if status_code == 200 and status_code_etablissement == 200 %}
+    <div>Le nom de votre commune : {{ content }} </div>
+    <div>Les Pole emplois de votre commune : {{ content_etablissement }}</div>
+{% else %}
+    <div>Il y a un problème avec votre formulaire, recommencez !</div>
+{% endif %}
+</body>
+</html>
